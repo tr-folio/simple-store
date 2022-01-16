@@ -1,0 +1,106 @@
+/* Utility Styles */
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+.custom-row {
+  padding: 50px;
+  background-color: #fffafa;
+}
+
+/* Main Styles */
+.search-container {
+  display: block;
+  max-width: 500px;
+  margin: auto;
+  padding: 30px 20px;
+}
+.search-box {
+  display: flex;
+  justify-content: space-between;
+}
+.search-field {
+  flex: 4;
+  border: 1px solid rgb(3, 118, 211);
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+}
+.search-field:hover {
+  outline: none;
+}
+.search-button {
+  flex: 1;
+  padding: 10px 50px;
+  border-radius: 5px;
+  margin-left: 10px;
+  outline: none;
+}
+#all-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  /* border: 1px solid black; */
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.single-product {
+  min-height: 500px;
+  padding: 10px;
+  transition: 0.6s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  background-color: #fffafa;
+}
+.single-product:hover {
+  box-shadow: 4px 4px 7px gray;
+  border-radius: 10px;
+  border: 1px solid cyan;
+}
+.product-image {
+  width: 150px;
+  height: 150px;
+}
+.cart {
+  width: 350px;
+  /* border: 1px solid green; */
+  padding: 10px;
+  box-shadow: 10px 10px 20px gray;
+  border-radius: 5px;
+  margin-right: 30px;
+  position: fixed;
+}
+.cart-main {
+  padding-right: 30px;
+}
+
+/* Media Queries: Small Devices */
+@media only screen and (max-width: 768px) {
+  #all-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cart {
+    width: 300px;
+    /* border: 1px solid green; */
+    padding: 10px;
+    box-shadow: 10px 10px 20px gray;
+    border-radius: 5px;
+    margin-right: 30px;
+    position: fixed;
+  }
+  .cart-main {
+    padding-right: 10px;
+  }
+}
+
+/* Media Queries: Extra-Small Devices */
+@media only screen and (max-width: 468px) {
+  #all-products {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
